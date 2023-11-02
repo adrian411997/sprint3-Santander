@@ -1,0 +1,62 @@
+.welcomeContent {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.home {
+  background-image: url("../../../assets/kajetan-sumila-6NnZFnfj0zA-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Color de fondo semitransparente (en este caso, negro con 50% de opacidad) */
+  z-index: 1; /* Asegura que la capa esté por encima de la imagen de fondo */
+}
+.welcomeContainer {
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+.welcomeDIV h1 {
+  font-size: 5vw;
+  color: white;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+.welcomeDIV {
+  width: 50%;
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  text-align: center;
+}
+.upcoming {
+  background-image: url("../../../assets/upcoming.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.past {
+  background-image: url("../../../assets/fondo2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

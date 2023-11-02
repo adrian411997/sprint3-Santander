@@ -1,0 +1,73 @@
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stats .table-content {
+  width: 95%;
+  padding-top: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cards-stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards-stats > div {
+  width: 30%;
+  background-color: rgb(32, 31, 35);
+  border-top: 2px solid aqua;
+  color: white;
+  text-align: center;
+  padding: 20px 0px;
+  border-radius: 0.5em;
+}
+.cards-stats > div > h3 {
+  padding-bottom: 20px;
+}
+.table-container {
+  margin: 30px 0px;
+  color: white;
+  width: 100%;
+}
+.table {
+  width: 100%;
+  text-align: center;
+  margin: 50px 0px;
+}
+.table h2 {
+  background-color: rgb(32, 31, 35);
+  padding: 10px;
+  border-top: 2px solid aqua;
+  border-top-right-radius: 0.5em;
+  border-top-left-radius: 0.5em;
+}
+table {
+  width: 100%;
+  text-align: left;
+  text-align: center;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background-color: rgb(15, 12, 16);
+}
+th {
+  width: 30%;
+  flex: 1;
+}
+/*
+rgb(15, 15, 15);
+*/
+thead th {
+  width: 30%;
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid white;
+}
+tbody tr td {
+  padding: 10px 0px;
+}

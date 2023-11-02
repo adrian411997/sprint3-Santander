@@ -1,0 +1,44 @@
+.card-space {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  height: 100vh;
+  color: white;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+  align-items: center;
+}
+.card-detail {
+  background-color: rgb(15, 15, 15);
+  width: 80%;
+  border: 1px solid black;
+  display: flex;
+  padding: 10px;
+  box-shadow: -16px 16px 0px -8px aqua;
+  -webkit-box-shadow: -16px 16px 0px -8px aqua;
+  -moz-box-shadow: -16px 16px 0px -8px aqua;
+  position: relative;
+}
+.detail-image {
+  width: 50%;
+}
+.detail-image img {
+  width: 100%;
+}
+.detail-words {
+  width: 50%;
+  margin-left: 10px;
+}
+.detail-words > div:not(:first-child) {
+  margin-top: 20px;
+}
+.detail-info {
+  display: flex;
+  justify-content: space-between;
+}

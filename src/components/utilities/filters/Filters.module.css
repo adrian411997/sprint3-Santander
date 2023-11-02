@@ -1,0 +1,65 @@
+.contentButton {
+  padding: 20px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: white;
+}
+.contentButtonContainer {
+  display: flex;
+  width: 90%;
+  align-items: center;
+}
+.contentBoxs {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.searchBar {
+  width: 50%;
+  display: flex;
+  justify-content: right;
+}
+.searchBar input {
+  width: 50%;
+  padding: 10px;
+}
+.selectResponsive {
+  display: none;
+}
+.cardsSpace {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.cardsContainer {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width: 770px) {
+  .contentButtonContainer {
+    justify-content: space-between;
+    width: 90%;
+  }
+  .selectResponsive {
+    display: flex;
+    width: 50%;
+  }
+  .selectResponsive select {
+    width: 90%;
+    padding: 10px;
+  }
+  .contentBoxs {
+    display: none;
+  }
+
+  .searchBar {
+    width: 50%;
+  }
+  .searchBar input {
+    width: 80%;
+  }
+}
