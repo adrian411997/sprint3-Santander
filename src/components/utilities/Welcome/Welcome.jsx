@@ -1,9 +1,9 @@
 import "./Welcome.css";
 import PropTypes from "prop-types";
 
-const Welcome = ({ className, text }) => {
+const Welcome = ({ cn, text }) => {
   return (
-    <div className={`welcomeContent ${className}`}>
+    <div data-testid="welcome" className={`welcomeContent ${cn}`}>
       <div className="overlay"></div>
       <div className="welcomeContainer">
         <div className="welcomeDIV">
@@ -15,7 +15,7 @@ const Welcome = ({ className, text }) => {
 };
 
 Welcome.propTypes = {
-  className: PropTypes.string.isRequired,
+  cn: PropTypes.string.isRequired,
   text: PropTypes.string,
 };
 export default Welcome;

@@ -21,7 +21,7 @@ function App() {
               <Layout
                 Comp1={
                   <Welcome
-                    className="home"
+                    cn="home"
                     text="Connecting People Through Unforgettable Experiences."
                   />
                 }
@@ -33,7 +33,7 @@ function App() {
             path="/upcoming"
             element={
               <Layout
-                Comp1={<Welcome className="upcoming" />}
+                Comp1={<Welcome cn="upcoming" />}
                 Comp2={<Filters xporFecha={filterDate} indic={false} />}
               />
             }
@@ -44,7 +44,7 @@ function App() {
               <Layout
                 Comp1={
                   <Welcome
-                    className="past"
+                    cn="past"
                     text={"A TRAVEL FOR THE PAST, A TRAVEL OF OUR HISTORY"}
                   />
                 }

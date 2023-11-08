@@ -1,17 +1,20 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import getData from "../../functions/Api";
+
+import { getAllEvents, listOfEvents } from "../../../Redux/Reducers/events";
 import "./Details.css";
+import { useDispatch, useSelector } from "react-redux";
 
 const Details = () => {
+  const dispatch = useDispatch();
   const data = JSON.parse(localStorage.getItem("eventsData"));
-  const [eventos, setEventos] = useState(data ? data : null);
+  const eventos = useSelector(listOfEvents);
   let params = useParams();
   const [thisEvent, setThisEvent] = useState(null);
 
   useEffect(() => {
     if (!data) {
-      getData("https://mindhub-xj03.onrender.com/api/amazing", setEventos);
+      dispatch(getAllEvents());
       localStorage.setItem("eventsData", JSON.stringify(eventos));
     } else {
       setThisEvent(eventos.filter((ev) => ev._id === parseInt(params.id))[0]);

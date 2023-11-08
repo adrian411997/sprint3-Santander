@@ -22,13 +22,14 @@ const Header = () => {
   });
   console.log(showMenu);
   return (
-    <header className={`${background}`}>
+    <header data-testid="header" className={`${background}`}>
       <div className={`headerContainer `}>
         <div className="logo">
           <img src={icon} width={50} height={50} />
         </div>{" "}
         <div className="menu-icon">
           <svg
+            role="responsive"
             id="resp"
             version="1.1"
             width="40px"
@@ -47,7 +48,7 @@ const Header = () => {
             </g>
           </svg>
         </div>
-        <div className={`headerLinks ${showMenu}`}>
+        <div data-testid="headerLinks" className={`headerLinks ${showMenu}`}>
           <nav>
             <ul>
               {links.map((l, index) => (
