@@ -8,7 +8,7 @@ const Stats = () => {
   const [eventos, setEventos] = useState(null);
   const [tablesData, setTablesData] = useState(null);
   const table1 = ["Categorias", "Revenue", "Percentage of attendance"];
-  console.log(tablesData.objectsUpcoming);
+
   useEffect(() => {
     // Verifica si los eventos se encuentran en el almacenamiento local
     const data = JSON.parse(localStorage.getItem("eventsData"));

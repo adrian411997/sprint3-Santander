@@ -7,7 +7,9 @@ const Welcome = ({ cn, text }) => {
       <div className="overlay"></div>
       <div className="welcomeContainer">
         <div className="welcomeDIV">
-          <h1>{text}</h1>
+          <h1 data-aos="fade-right" data-aos-duration="1000">
+            {text}
+          </h1>
         </div>
       </div>
     </div>

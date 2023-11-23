@@ -36,8 +36,6 @@
 .welcomeDIV h1 {
   font-size: 5vw;
   color: white;
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 2px;
 }
 .welcomeDIV {
   width: 50%;

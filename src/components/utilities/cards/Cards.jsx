@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Cards = ({ image, name, description, id }) => {
   return (
-    <div className={style.card}>
+    <div data-aos="fade-up" className={style.card}>
       <div className={style.imgCard}>
         <img src={image} />
       </div>
