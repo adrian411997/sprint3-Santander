@@ -1,13 +1,15 @@
 import "./Welcome.css";
 import PropTypes from "prop-types";
 
-const Welcome = ({ className, text }) => {
+const Welcome = ({ cn, text }) => {
   return (
-    <div className={`welcomeContent ${className}`}>
+    <div data-testid="welcome" className={`welcomeContent ${cn}`}>
       <div className="overlay"></div>
       <div className="welcomeContainer">
         <div className="welcomeDIV">
-          <h1>{text}</h1>
+          <h1 data-aos="fade-right" data-aos-duration="1000">
+            {text}
+          </h1>
         </div>
       </div>
     </div>
@@ -15,7 +17,7 @@ const Welcome = ({ className, text }) => {
 };
 
 Welcome.propTypes = {
-  className: PropTypes.string.isRequired,
+  cn: PropTypes.string.isRequired,
   text: PropTypes.string,
 };
 export default Welcome;

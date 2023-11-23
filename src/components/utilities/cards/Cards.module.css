@@ -10,6 +10,7 @@
   -moz-box-shadow: -16px 16px 0px -8px aqua;
   position: relative;
   color: white;
+  transition: 0.3s ease-in-out;
 }
 .imgCard {
   width: 100%;
@@ -54,16 +55,24 @@
   color: rgb(11, 94, 215);
   background-color: white;
 }
+.card:hover {
+  transform: scale(1.1) !important;
+}
 .card > div:not(:last-child) {
   margin-bottom: 10px;
 }
 
+@media (max-width: 1080px) {
+  .card {
+    width: 45%;
+  }
+}
 @media (max-width: 600px) {
   .card {
     width: 45%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 610px) {
   .card {
     width: 90%;
   }

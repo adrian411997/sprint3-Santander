@@ -5,7 +5,7 @@ const Table = ({ title, theads, data }) => {
   return (
     <div className="table">
       <h2>{title}</h2>
-      <table>
+      <table role="table">
         <thead>
           <tr>
             {theads.map((th, index) => (
@@ -15,7 +15,7 @@ const Table = ({ title, theads, data }) => {
         </thead>
         <tbody>
           {data.map((d, index) => (
-            <tr key={index}>
+            <tr data-testid="row" key={index}>
               <td>{d.categoria}</td>
               <td>${d.ganancias}</td>
               <td>${d.asistencia.toFixed(2)}</td>
